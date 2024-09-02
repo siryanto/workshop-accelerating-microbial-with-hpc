@@ -45,10 +45,11 @@ To see what's partition available in our cluster, simply type
 ```
 sinfo
 ```
-<details>
-  <summary>Here is the screenshot </summary>
-[Partition](https://github.com/user-attachments/assets/9455bcdc-e2fc-49f0-9afb-e63b579668b9)
-</details>
+Will be look like this:
+
+![Screenshot 2024-09-02 at 15 31 39](https://github.com/user-attachments/assets/50cb41e1-76b5-4785-b45d-3ff9fc9ce614)
+
+
 
 ## Two type of job submission
 1. Interactive Job Submission
