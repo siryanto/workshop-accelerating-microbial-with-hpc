@@ -26,7 +26,7 @@ Now, here’s how to use the application. For instance, if you want to use FastQ
 ```
 module load bioinformatics/fastqc
 ```
-or the using shorter command
+or using a shorter command
 ```
 ml bioinformatics/fastqc
 ```
@@ -34,7 +34,7 @@ Display loaded module on your environment:
 ```
 module list
 ```
-or use the shorter command:
+or using a shorter command:
 ```
 ml
 ```
