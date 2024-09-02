@@ -248,8 +248,10 @@ Check job status using `squeue` command
 ```
 squeue -u `whoami`
 ```
+If everything works flawlessly, the status (ST) should be 'R'.
 
 ---
+
 
 Awesome work! You've just hacked the microbial genome analysis on MAHAMERU HPC—now go out there and let those microbes know who's boss!
 
