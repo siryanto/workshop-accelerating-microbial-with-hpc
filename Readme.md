@@ -9,6 +9,24 @@ ssh username@login2.hpc.brin.go.id
 ```
 You'll be landed at the `trembesi02` node which is a **login** node.
 
+## Introducing the module
+There are several ways to run an application on MAHAMERU. First, you can install the app yourself by compiling it from the source code, or you can use Conda/Mamba to install your app and its environment, including the necessary dependencies. The latter option often reduces headaches. Secondly, you can use a software module that we provide on the server. All you need to do is load the module and start using it—no hassle.
+
+To show modules available in the server, type
+```
+module avail
+```
+Or the shorter command one
+```
+ml av
+```
+`ml` means module `av` means available
+
+For instance, you want to use FastQC module, just type
+```
+module load bi
+```
+
 ## Two type of job submission
 1. Interactive Job Submission
 2. Non-interactive Job Submission
@@ -37,7 +55,7 @@ Create a symbolic link for all the raw samples we've prepared using `ln -s` comm
 ```
 ln -s /mgpfs/data/workshop_raw/* raw/
 ```
-Check the result by listing the raw directory using `ls` command
+Check the result by listing the raw directory using the `ls` command
 ```
 ls raw
 ```
@@ -48,4 +66,8 @@ illumina_f.fq  illumina_r.fq  minion_2d.fq
 
 # Do not copy this snippet code, it just shows you the result should appear.
 ```
+All good? :)
+
+## 1. Interactive job submission 
+In this section, we will QC-ing our samples using two tools including FastQC and NanoPlot for Illumina reads and ONT reads, respectively. Don't worry, you don't need to install it because both tools are already available in the module. 
 
