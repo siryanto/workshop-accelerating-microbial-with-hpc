@@ -39,6 +39,17 @@ ml
 ```
 If you see several modules loaded in your environment, don’t be confused; these are pre-loaded modules that automatically load when you log in.
 
+## The partition in SLURM
+In SLURM, a partition is a set of compute nodes grouped together for scheduling jobs.
+To see what's partition available in our cluster, simply type
+```
+sinfo
+```
+<details>
+  <summary>Here is the screenshot </summary>
+![Screenshot 2024-09-02 at 15 31 39](https://github.com/user-attachments/assets/602db0d4-ddbb-4fe7-8104-82540daad916)
+</details>
+
 ## Two type of job submission
 1. Interactive Job Submission
 2. Non-interactive Job Submission
@@ -83,5 +94,9 @@ illumina_f.fq  illumina_r.fq  minion_2d.fq
 All good? :)
 
 ## 1. Interactive job submission 
-In this section, we will QC-ing our samples using two tools including FastQC and NanoPlot for Illumina reads and ONT reads, respectively. Don't worry, you don't need to install it because both tools are already available in the module. 
+In this section, we will perform quality control (QC) on our samples using two tools: FastQC for Illumina reads and NanoPlot for ONT reads. Don’t worry, you don’t need to install these tools, as they are already available in the module.
+
+To start, we use `srun` command to launch the mode:
+```
+srun
 
