@@ -248,7 +248,7 @@ Check job status using `squeue` command
 ```
 squeue -u `whoami`
 ```
-If everything works flawlessly, the status (ST) should be 'R'.
+If everything works flawlessly, the status (ST) should be 'R'. This job may take some time to complete, but you can close the terminal, and the job will continue running
 
 ---
 
