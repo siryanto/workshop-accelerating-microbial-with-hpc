@@ -24,8 +24,13 @@ ml av
 
 For instance, you want to use FastQC module, just type
 ```
-module load bi
+module load bioinformatics/fastqc
 ```
+or the using shorter command
+```
+ml bioinformatics/fastqc
+```
+
 
 ## Two type of job submission
 1. Interactive Job Submission
