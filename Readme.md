@@ -126,8 +126,7 @@ It will take a while to proceed. If succeeds, expected output will be stored in 
 ```
 ls fastqc_output
 ```
-FastQC will produce a report in html format that can be viwed using your favourite internet browser. Download the file using SFTP client such as FileZilla, CyberDuck, etc.
-
+FastQC will produce a report in HTML format that can be viewed using your preferred web browser. You can download the file using an SFTP client such as FileZilla, CyberDuck, or similar.
 Note: use `fastqc --help` for more information
 ### 1.b QC ONT reads
 Using FastQC to assess ONT reads is not suitable, as ONT uses a different Q-score. NanoPlot is the appropriate choice for this task.
