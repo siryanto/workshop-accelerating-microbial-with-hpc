@@ -138,7 +138,7 @@ First, load the module. Remember how to do this? Hint: The module name is 'bioin
 Oops, sorry about that. Please try it yourself.
 </details>
 
-Make sure the module was loaded, now run the app:
+Make sure the module is loaded, and then run the app:
 ```
 NanoPlot -t 128 --fastq raw/minion_2d.fq -o nanoplot_out
 ```
