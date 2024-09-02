@@ -16,12 +16,12 @@ To display the available modules on the server, type:
 ```
 module avail
 ```
-Or the shorter command one
+Same command:
 ```
 ml av
 ```
 `ml` means module `av` means available
-Now, how to use the app. For instance, you want to use FastQC for QC-ing your reads, just type
+Now, here’s how to use the application. For instance, if you want to use FastQC for quality checking your reads, just type:
 ```
 module load bioinformatics/fastqc
 ```
