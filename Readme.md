@@ -246,6 +246,7 @@ squeue -u `whoami`
 ```
 If there are no problems, the status (ST) should be **R**.
 
+---
 
 Awesome work! You've just hacked the microbial genome analysis on HPC—now go out there and let those microbes know who's boss!
 
