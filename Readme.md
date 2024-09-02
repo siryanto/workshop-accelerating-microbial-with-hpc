@@ -23,4 +23,16 @@ To make it organized, we'll create a directory called `workshop_microbial` under
 ```
 mkdir workshop_microbial
 ```
+Enter the directory
+```
+cd workshop_microbial
+```
+Create a directory called `raw` to store the raw data. Do you know how to do that?
+<details>
+  <summary>Click here to show</summary>
+  ```bash
+  mkdir raw```
+
+</details>
+
 
