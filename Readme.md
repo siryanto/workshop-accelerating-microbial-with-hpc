@@ -103,7 +103,7 @@ In this section, we will perform quality control (QC) on our samples using two t
 
 To start, we use `srun` command to launch the mode:
 ```
-srun --partition=short --cpus-per-tasks=32 --pty bash
+srun --partition=short --cpus-per-task=32 --pty bash
 ```
 Here is the explanation:
 - `srun`: command to start interactive mode
