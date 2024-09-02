@@ -14,7 +14,7 @@ You'll be landed at `trembesi02` node which is a **login** node.
 2. Non-interactive Job Submission
 In this workshop, we will use both. Quality Control (QC) of the reads will be done in interactive mode, while the rest (assembly and annotation) will be done using a script in non-interactive mode.
 
-Are you ready? Let's start
+Are you ready? Let's start!
 
 ## Preparing the samples
 All samples we'll use are already prepared in a shared directory.
