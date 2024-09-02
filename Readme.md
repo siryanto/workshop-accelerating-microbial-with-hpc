@@ -131,7 +131,8 @@ Note: use `fastqc --help` for more information
 ### 1.b QC ONT reads
 Using FastQC to assess ONT reads is not suitable, as ONT uses a different Q-score. NanoPlot is the appropriate choice for this task.
 
-First, load the module. Remember how to do this? Hint: The module name is 'bioinformatics/nanoplot'.
+First, load the module. Remember how to do this? 
+Hint: The module name is 'bioinformatics/nanoplot'.
 <details>
   <summary>Here is how</summary>
 Oops, sorry about that. Please try it yourself.
