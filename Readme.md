@@ -73,7 +73,7 @@ cd workshop_microbial
 Create a directory called `raw` to store the raw data. Do you know how to do that?
 <details>
   <summary>Click here if you have no idea</summary>
-  Symply type 'mkdir raw'
+   <pre>mkdir raw</pre>
 </details>
 
 Create a symbolic link for all the raw samples we've prepared using `ln -s` command and store it under directory called 'raw'.
@@ -128,11 +128,49 @@ ls fastqc_output
 ```
 FastQC will produce a report in html format that can be viwed using your favourite internet browser. Download the file using SFTP client such as FileZilla, CyberDuck, etc.
 
+Note: use `fastqc --help` for more information
 ### 1.b QC ONT reads
 Using FastQC to assess ONT reads is not suitable, as ONT uses a different Q-score. NanoPlot is the appropriate choice for this task.
 
-First, load the module. Remember how to do this? Hint: The module name is bioinformatics/nanoplot.
+First, load the module. Remember how to do this? Hint: The module name is 'bioinformatics/nanoplot'.
 <details>
   <summary>Here is how</summary>
 Oops, sorry about that. Please try it yourself.
+</details>
+
+Run the app
+```
+NanoPlot -t 128 --fastq raw/minion_2d.fq -o nanoplot_out
+```
+It will take a while to proceed.
+
+More information provided in the help by executing `NanoPlot --help`
+
+Need some coffee? You can grab a cup while waiting for NanoPlot to finish.
+<details>
+  <summary>Enjoy coffee</summary>
+  <pre>
+                      (
+                        )     (
+                 ___...(-------)-....___
+             .-""       )    (          ""-.
+       .-'``'|-._             )         _.-|
+      /  .--.|   `""---...........---""`   |
+     /  /    |                             |
+     |  |    |                             |
+      \  \   |                             |
+       `\ `\ |                             |
+         `\ `|                             |
+         _/ /\                             /
+        (__/  \                           /
+     _..---""` \                         /`""---.._
+  .-'           \                       /          '-.
+ :               `-.__             __.-'              :
+ :                  ) ""---...---"" (                 :
+  '._               `"--...___...--"`              _.'
+jgs \""--..__                              __..--""/
+     '._     """----.....______.....----"""     _.'
+        `""--..,,_____            _____,,..--""`
+                      `"""----"""`
+  </pre>
 </details>
