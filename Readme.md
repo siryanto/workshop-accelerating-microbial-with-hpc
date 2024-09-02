@@ -197,7 +197,7 @@ HTML is a preferred format for QC software reports due to its dynamic and intera
 ## 2. Non-interactive job submission
 In this mode, we will perform assembly and annotation using Unicycler and Prokka, respectively. To do this, we need to prepare a SLURM script for submission. Generally, this script will include several components, such as SLURM standard parameters, bash commands to navigate directories and access files, bash commands to load and execute modules or applications, and any other necessary commands. This process is similar to what we did in interactive mode, but the commands are written in a script file and executed non-interactively.
 
-Create a `.slurm` file, e.g. assembly.slurm. There are many text editor available such as `vim` and `nano` to create a file. In this case, we use `nano` for simplicity.
+Create a `.slurm` file, e.g. `assembly.slurm`. There are many text editor available such as `vim` and `nano` to create a file. In this case, we use `nano` for simplicity.
 ```
 nano assembly.slurm
 ```
