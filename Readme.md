@@ -248,7 +248,6 @@ Check job status using `squeue` command
 ```
 squeue -u `whoami`
 ```
-If there are no problems, the status (ST) should be **R**.
 
 ---
 
