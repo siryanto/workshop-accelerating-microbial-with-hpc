@@ -29,10 +29,13 @@ cd workshop_microbial
 ```
 Create a directory called `raw` to store the raw data. Do you know how to do that?
 <details>
-  <summary>Click here to show</summary>
-  ```bash
-  mkdir raw```
-
+  <summary>Click here if you have no idea</summary>
+  mkdir raw
 </details>
 
+```
 
+
+
+
+```
