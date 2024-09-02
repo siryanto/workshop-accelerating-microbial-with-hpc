@@ -1,6 +1,6 @@
 # Accelerating Microbial Insight with HPC and Bioinformatics
 
-This instruction provides an example of analysing microbial data using MAHAMERU BRIN HPC. In this workshop, all the software that will be used is already available as a module, hence you don't need to prepare the environment. The snippet code on this page is designed to be copied by clicking on the right corner of each code box and pasting it in your terminal.
+This guide provides an example of analyzing microbial data using the MAHAMERU BRIN HPC. In this workshop, all the required software is already available as modules, so you don’t need to set up the environment. You can copy the code snippets on this page by clicking the top right corner of each code box and pasting them into your terminal.
 
 ## Login to MAHAMERU
 Open your terminal (Linux, MacOS) or PowerShell (Windows) and type the command as follows
