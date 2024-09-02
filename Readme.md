@@ -29,11 +29,11 @@ or the using shorter command
 ```
 ml bioinformatics/fastqc
 ```
-Show listed module on your environment:
+Display loaded module on your environment:
 ```
 module list
 ```
-or the shorter one
+or use the shorter command:
 ```
 ml
 ```
