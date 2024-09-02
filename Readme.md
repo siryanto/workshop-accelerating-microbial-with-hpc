@@ -195,7 +195,7 @@ The SLURM script
 ```
 #!/bin/bash
 
-#SBATCH --job-name=ws_microbial
+#SBATCH --job-name=assembly_microbial
 #SBATCH --ntasks=1
 #SBATCH --partition=short
 #SBATCH --cpus-per-task=64
