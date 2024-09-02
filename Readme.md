@@ -177,3 +177,15 @@ jgs \""--..__                              __..--""/
 NanoPlot also creates a report in HTML format, stored in the output directory. To preview the report, download it and open it using a web browser.
 
 ### 1.c Use MultiQC to wrap all the QC result
+Load the module
+```
+ml multiqc
+```
+Run the app
+```
+multiqc . -o multiqc_out
+```
+Expected result stored in the argument's value of `-o`
+HTML is a preferred format for QC software reports due to its dynamic and interactive features, such as those found in MultiQC outputs. 
+
+## 2. Non-interactive job submission
