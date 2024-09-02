@@ -201,7 +201,7 @@ Create a `.slurm` file, e.g. `assembly.slurm`. There are many text editor availa
 ```
 nano assembly.slurm
 ```
-Copy and paste code below inside the nano editor
+Copy and paste the code below into the nano editor
 
 ```
 #!/bin/bash
