@@ -45,5 +45,7 @@ If succeeds, the directory will contain a symbolic link of raw data which are tw
 ```
 $ ls raw/
 illumina_f.fq  illumina_r.fq  minion_2d.fq
+
+# Do not copy this snippet code, it just shows you the result should appear.
 ```
 
