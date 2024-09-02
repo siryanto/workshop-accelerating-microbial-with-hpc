@@ -16,7 +16,7 @@ In this workshop, we will use both. Quality Control (QC) of the reads will be do
 
 Are you ready? Let's start!
 
-## 1. Preparing the samples
+## Preparing the samples
 All samples we'll use are already prepared in a shared directory, so you don't need to download them. The things you need to do is just make a symbolic link to your prepared directory.
 
 To make it organized, we'll create a directory called `workshop_microbial` under your home directory.
@@ -37,3 +37,13 @@ Create a symbolic link for all the raw samples we've prepared using `ln -s` comm
 ```
 ln -s /mgpfs/data/workshop_raw/* raw/
 ```
+Check the result by listing the raw directory using `ls` command
+```
+ls raw
+```
+If succeeds, the directory will contain a symbolic link of raw data which are two Illumina reads (forward and reverse) and one ONT reads.
+```
+$ ls raw/
+illumina_f.fq  illumina_r.fq  minion_2d.fq
+```
+
