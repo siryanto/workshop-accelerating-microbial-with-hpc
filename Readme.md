@@ -12,7 +12,7 @@ You'll be placed on the `trembesi02` node which is a **login** node.
 ## Introducing the module
 There are several ways to run an application on MAHAMERU. First, you can install the app yourself by compiling it from the source code, or you can use Conda/Mamba to install your app and its environment, including the necessary dependencies. The latter option often reduces headaches. Secondly, you can use a software module that we provide on the server. All you need to do is load the module and start using it—no hassle.
 
-To show modules available in the server, type
+To display the available modules on the server, type:
 ```
 module avail
 ```
