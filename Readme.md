@@ -174,3 +174,6 @@ jgs \""--..__                              __..--""/
                       `"""----"""`
   </pre>
 </details>
+NanoPlot also creates a report in HTML format, stored in the output directory. To preview the report, download it and open it using a web browser.
+
+### 1.c Use MultiQC to wrap all the QC result
