@@ -253,5 +253,7 @@ If there are no problems, the status (ST) should be **R**.
 
 Awesome work! You've just hacked the microbial genome analysis on MAHAMERU HPC—now go out there and let those microbes know who's boss!
 
-Coffee?   ![pngwing com](https://github.com/user-attachments/assets/34d7d746-c80a-43c2-8bd5-8b0de5d2a346)
+Coffee?   
+
+![pngwing com](https://github.com/user-attachments/assets/34d7d746-c80a-43c2-8bd5-8b0de5d2a346)
 
