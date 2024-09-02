@@ -47,7 +47,7 @@ sinfo
 ```
 <details>
   <summary>Here is the screenshot </summary>
-![Screenshot 2024-09-02 at 15 31 39](https://github.com/user-attachments/assets/602db0d4-ddbb-4fe7-8104-82540daad916)
+![Partition](https://github.com/user-attachments/assets/9455bcdc-e2fc-49f0-9afb-e63b579668b9)
 </details>
 
 ## Two type of job submission
