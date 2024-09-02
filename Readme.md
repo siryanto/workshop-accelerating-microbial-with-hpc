@@ -16,7 +16,7 @@ In this workshop, we will use both. Quality Control (QC) of the reads will be do
 
 Are you ready? Let's start!
 
-## Preparing the samples
+## 1. Preparing the samples
 All samples we'll use are already prepared in a shared directory, so you don't need to download them. The things you need to do is just make a symbolic link to your prepared directory.
 
 To make it organized, we'll create a directory called `workshop_microbial` under your home directory.
@@ -32,6 +32,12 @@ Create a directory called `raw` to store the raw data. Do you know how to do tha
   <summary>Click here if you have no idea</summary>
   mkdir raw
 </details>
+Create a symbolic link for all the raw samples we've prepared using `ln -s` command and store it under directory called 'raw'.
+```
+ln -s //mgpfs/data/workshop_raw/* raw/
+```
+
+
 
 ```
 
