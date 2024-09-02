@@ -245,3 +245,6 @@ Check job status using `squeue` command
 squeue -u `whoami`
 ```
 If there are no problems, the status (ST) should be **R**.
+
+Coffee?   ![pngwing com](https://github.com/user-attachments/assets/34d7d746-c80a-43c2-8bd5-8b0de5d2a346)
+
