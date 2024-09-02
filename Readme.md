@@ -63,9 +63,9 @@ NOTE: You are not allowed to run applications on the login node (trembesi02). If
 Are you ready? Let's dive in!
 
 ## Preparing the samples
-All samples we'll use are already prepared in a shared directory, so you don't need to download them.  You only need to create a symbolic link to this directory in your workspace.
+All samples  are already prepared in a shared directory, so you don't need to download them.  You only need to create a symbolic link to this directory in your workspace.
 
-To make it organized, we'll create a directory called `workshop_microbial` under your home directory.
+To make it organized, create a directory called `workshop_microbial` under your home directory.
 ```
 mkdir workshop_microbial
 ```
