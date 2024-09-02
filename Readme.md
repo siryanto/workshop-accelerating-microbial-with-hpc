@@ -3,11 +3,11 @@
 This guide provides an example of analyzing microbial data using the MAHAMERU BRIN HPC. In this workshop, all the required software is already available as modules, so you don’t need to set up the environment. You can copy the code snippets on this page by clicking the top right corner of each code box and pasting them into your terminal.
 
 ## Login to MAHAMERU
-Open your terminal (Linux, MacOS) or PowerShell (Windows) and type the command as follows
+Open your terminal (Linux, MacOS) or PowerShell (Windows) and type the folowing commands
 ```
 ssh username@login2.hpc.brin.go.id
 ```
-You'll be landed at the `trembesi02` node which is a **login** node.
+You'll be placed on the `trembesi02` node which is a **login** node.
 
 ## Introducing the module
 There are several ways to run an application on MAHAMERU. First, you can install the app yourself by compiling it from the source code, or you can use Conda/Mamba to install your app and its environment, including the necessary dependencies. The latter option often reduces headaches. Secondly, you can use a software module that we provide on the server. All you need to do is load the module and start using it—no hassle.
