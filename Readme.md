@@ -103,12 +103,12 @@ In this section, we will perform quality control (QC) on our samples using two t
 
 To start, we use `srun` command to launch the mode:
 ```
-srun --partition=short --cpus-per-tasks=64 --pty bash
+srun --partition=short --cpus-per-tasks=32 --pty bash
 ```
 Here is the explanation:
 - `srun`: command to start interactive mode
 - `--partition`: This argument specifies the partition, in this case we use a partition called  'short'
-- `--cpus-per-tasks`:This argument specifies the number of CPU cores to allocate for a task. For example, setting this to 64 would use all the cores on a single node.
+- `--cpus-per-tasks`:This argument specifies the number of CPU cores to allocate for a task.
 - `--pty bash`: This argument is used to launch a bash shell on the compute node.
 If the command succeeds, you’ll be placed on a compute node named trembesiXX (not trembesi02, which is the login node).
 
@@ -124,7 +124,7 @@ ml bioinformatics/fastqc
 Run the app to asses our sequence data
 ```
 mkdir fastqc_out  #Create a directory to store FastQC result
-fastqc raw/illumina_*.fq -o fastqc_out -t 128
+fastqc raw/illumina_*.fq -o fastqc_out -t 64
 ```
 It will take a while to complete. If succeeds, expected output will be stored in 'fastqc_output' directory. Use `ls` command to see what's inside.
 ```
@@ -145,7 +145,7 @@ Oops, sorry about that. Please try it yourself.
 
 Make sure the module is loaded, and then run the app:
 ```
-NanoPlot -t 128 --fastq raw/minion_2d.fq -o nanoplot_out
+NanoPlot -t 64 --fastq raw/minion_2d.fq -o nanoplot_out
 ```
 It will take a while to complete.
 
@@ -210,7 +210,7 @@ Copy and paste the code below into the nano editor
 #SBATCH --job-name=assembly_microbial
 #SBATCH --ntasks=1
 #SBATCH --partition=short
-#SBATCH --cpus-per-task=64
+#SBATCH --cpus-per-task=32
 
 # Your code goes here
 
@@ -224,13 +224,13 @@ ml bioinformatics/quast
 ml bioinformatics/prokka-env/1
 
 # De novo assembly using Unicycler, an assembly pipeline for bacterial genomes.
-unicycler -t 128 -1 raw/illumina_f.fq -2 raw/illumina_r.fq -o unicycler_out
+unicycler -t 64 -1 raw/illumina_f.fq -2 raw/illumina_r.fq -o unicycler_out
 
 # Check the result using QUAST
-quast.py -t 128 unicycler_out/assembly.fasta -o quast_out
+quast.py -t 64 unicycler_out/assembly.fasta -o quast_out
 
 # Annotate using Prokka
-prokka --cpus 128 unicycler_out/assembly.fasta -o prokka_out
+prokka --cpus 64 unicycler_out/assembly.fasta -o prokka_out
 
 # Print timestamp
 echo -e "Job finished at "
