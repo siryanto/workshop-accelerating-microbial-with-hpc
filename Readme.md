@@ -189,3 +189,39 @@ Expected result stored in the argument's value of `-o`
 HTML is a preferred format for QC software reports due to its dynamic and interactive features, such as those found in MultiQC outputs. 
 
 ## 2. Non-interactive job submission
+In this mode, we will perform assembly and annotation using Unicycler and Prokka, respectively. To do this, we need to prepare a SLURM script for submission. Generally, this script will include several components, such as SLURM standard parameters, bash commands to navigate directories and access files, bash commands to load and execute modules or applications, and any other necessary commands. This process is similar to what we did in interactive mode, but the commands are written in a script file and executed non-interactively.
+
+The SLURM script
+```
+#!/bin/bash
+
+#SBATCH --job-name=ws_microbial
+#SBATCH --ntasks=1
+#SBATCH --partition=short
+#SBATCH --cpus-per-task=64
+
+# Your code goes here
+
+# Print timestamp
+echo -e "Job started at "
+date
+
+# Load all modules needed
+ml bioinformatics/unicycler-env/1
+ml bioinformatics/quast
+ml bioinformatics/prokka-env/1
+
+# De novo assembly using Unicycler, an assembly pipeline for bacterial genomes.
+unicycler -t 128 -1 raw/illumina_f.fq -2 raw/illumina_r.fq -o unicycler_out
+
+# Check the result using QUAST
+quast.py -t 128 unicycler_out/assembly.fasta -o quast_out
+
+# Annotate using Prokka
+prokka --cpus 128 unicycler_out/assembly.fasta -o prokka_out
+
+# Print timestamp
+echo -e "Job finished at "
+date
+
+```
