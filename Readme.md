@@ -178,6 +178,8 @@ jgs \""--..__                              __..--""/
 NanoPlot also creates a report in HTML format, stored in the output directory. To preview the report, download it and open it using a web browser.
 
 ### 1.c Use MultiQC to wrap all the QC result
+MultiQC is a tool used to aggregate and visualize the results of various quality control (QC) tools into a single, comprehensive report.
+
 Load the module
 ```
 ml multiqc
