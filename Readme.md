@@ -108,7 +108,7 @@ Here is the explanation:
 - `--pty bash`: This argument is used to launch a bash shell on the compute node.
 If the command succeeds, you’ll be placed on a compute node named trembesiXX (not trembesi02, which is the login node).
 
-Make sure you're in the directory you created for this workshop, such as workshop_microbial. To confirm you're in the correct directory, use the pwd command. This command will print the current directory path. If you are in the wrong directory, use `cd` command to change to the correct working directory.
+Make sure you're in the directory you created for this workshop, such as workshop_microbial. To confirm you're in the correct directory, use the `pwd` command. This command will print the current directory path. If you are in the wrong directory, use `cd` command to change to the correct working directory.
 
 ### 1.a QC Illumina reads
 To do this, we use FastQC, one of the most popular tools for assessing the quality of sequence data. Remember, we are now working on an HPC node, which has more CPUs and memory compared to our laptop and supports a parallel environment. Not all applications have parallel execution capabilities, luckily FastQC supports multi-threading, which will make the job even faster.
