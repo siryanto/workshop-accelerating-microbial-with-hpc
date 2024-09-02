@@ -3,7 +3,7 @@
 This guide provides an example of analyzing microbial data using the MAHAMERU BRIN HPC. In this workshop, all the required software is already available as modules, so you don’t need to set up the environment. You can copy the code snippets on this page by clicking the top right corner of each code box and pasting them into your terminal.
 
 ## Login to MAHAMERU
-Open your terminal (Linux, MacOS) or PowerShell (Windows) and type the folowing commands
+Open your terminal (Linux, MacOS) or PowerShell (Windows) and type the following commands
 ```
 ssh username@login2.hpc.brin.go.id
 ```
@@ -20,8 +20,9 @@ Same command:
 ```
 ml av
 ```
-`ml` means module `av` means available
-Now, here’s how to use the application. For instance, if you want to use FastQC for quality checking your reads, just type:
+`ml` means module `av` means available.
+
+Now, here’s how to use the application. For instance, if you want to use FastQC for quality-checking your reads, just type:
 ```
 module load bioinformatics/fastqc
 ```
