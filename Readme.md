@@ -146,7 +146,7 @@ NanoPlot -t 128 --fastq raw/minion_2d.fq -o nanoplot_out
 ```
 It will take a while to proceed.
 
-More information provided in the help by executing `NanoPlot --help`
+More information provided in the help by executing `NanoPlot --help`. NanoPlot also creates a report in HTML format, stored in the output directory. To preview the report, download it and open it using a web browser.
 
 Need some coffee? You can grab a cup while waiting for NanoPlot to finish.
 <details>
@@ -176,7 +176,7 @@ jgs \""--..__                              __..--""/
                       `"""----"""`
   </pre>
 </details>
-NanoPlot also creates a report in HTML format, stored in the output directory. To preview the report, download it and open it using a web browser.
+
 
 ### 1.c Use MultiQC to wrap all the QC result
 MultiQC is a tool used to aggregate and visualize the results of various quality control (QC) tools into a single, comprehensive report.
