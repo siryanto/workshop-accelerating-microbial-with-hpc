@@ -188,7 +188,7 @@ Run the app
 ```
 multiqc . -o multiqc_out
 ```
-Expected result stored in the argument's value of `-o`
+Expected result stored in the argument's value of `-o`.
 HTML is a preferred format for QC software reports due to its dynamic and interactive features, such as those found in MultiQC outputs. 
 
 ## 2. Non-interactive job submission
