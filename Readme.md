@@ -21,8 +21,7 @@ Or the shorter command one
 ml av
 ```
 `ml` means module `av` means available
-
-For instance, you want to use FastQC module, just type
+Now, how to use the app. For instance, you want to use FastQC for QC-ing your reads, just type
 ```
 module load bioinformatics/fastqc
 ```
@@ -30,12 +29,22 @@ or the using shorter command
 ```
 ml bioinformatics/fastqc
 ```
-
+Show listed module on your environment:
+```
+module list
+```
+or the shorter one
+```
+ml
+```
+If you see several modules loaded in your environment, don’t be confused; these are pre-loaded modules that automatically load when you log in.
 
 ## Two type of job submission
 1. Interactive Job Submission
 2. Non-interactive Job Submission
 In this workshop, we will use both. Quality Control (QC) of the reads will be done in interactive mode, while the rest (assembly and annotation) will be done using a script in non-interactive mode.
+
+WARNING: You are not allowed to run applications on the login node (trembesi02). If your application hogs the resources, the system will automatically terminate it. Therefore, you need to submit your job either in interactive or non-interactive mode. However, simple tasks such as using `wget`, `curl`, or unzipping files typically do not consume significant resources, so running them on the login node is acceptable.
 
 Are you ready? Let's start!
 
