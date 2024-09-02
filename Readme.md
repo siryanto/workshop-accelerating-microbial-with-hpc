@@ -125,7 +125,7 @@ Run the app to asses our sequence data
 mkdir fastqc_out  #Create a directory to store FastQC result
 fastqc raw/illumina_*.fq -o fastqc_out -t 128
 ```
-It will take a while to proceed. If succeeds, expected output will be stored in 'fastqc_output' directory. Use `ls` command to see what's inside.
+It will take a while to complete. If succeeds, expected output will be stored in 'fastqc_output' directory. Use `ls` command to see what's inside.
 ```
 ls fastqc_output
 ```
@@ -146,7 +146,7 @@ Make sure the module is loaded, and then run the app:
 ```
 NanoPlot -t 128 --fastq raw/minion_2d.fq -o nanoplot_out
 ```
-It will take a while to proceed.
+It will take a while to complete.
 
 More information provided in the help by executing `NanoPlot --help`. NanoPlot also creates a report in HTML format, stored in the output directory. To preview the report, download it and open it using a web browser.
 
