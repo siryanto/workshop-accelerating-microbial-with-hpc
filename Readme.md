@@ -128,7 +128,7 @@ fastqc raw/illumina_*.fq -o fastqc_out -t 64
 ```
 It will take a while to complete. If succeeds, expected output will be stored in 'fastqc_output' directory. Use `ls` command to see what's inside.
 ```
-ls fastqc_output
+ls fastqc_out
 ```
 FastQC will produce a report in HTML format that can be viewed using your preferred web browser. You can download the file using an SFTP client such as FileZilla, CyberDuck, or similar.
 Note: use `fastqc --help` for more information
