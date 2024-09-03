@@ -186,7 +186,7 @@ MultiQC is a tool used to aggregate and visualize the results of various quality
 
 Load the module
 ```
-ml multiqc
+ml bioinformatics/multiqc
 ```
 Run the app
 ```
